@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { v4 as uuidv4 } from "uuid";
-// import { CreateStory, EditorStory, CapitolAiWrapper, generateStory } from "@capitol.ai/react";
 import { EditorStory, CapitolAiWrapper, generateStory } from "@capitol.ai/react";
 
 import './App.css'
@@ -117,7 +116,7 @@ const Home = () => {
 const Editor = () => {
   const { storyId } = useParams();
   return <EditorStory storyId={storyId} />;
-}
+};
 
 function App() {
   return (
@@ -130,6 +129,6 @@ function App() {
       </Router>
     </CapitolAiWrapper>
   );
-}
+};
 
 export default App
